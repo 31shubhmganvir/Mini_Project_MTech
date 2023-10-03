@@ -69,8 +69,8 @@ def read_file(path, color):  # color == GRAY or RGB
         print("failed to read image")
 
 if __name__ == "__main__":
-    coverImagePath = '/content/digital-watermarking/images/mandrill_512.jpg'
-    watermarkImagePath = '/content/digital-watermarking/images/lenna_512.jpg'
+    coverImagePath = '/content/Mini_Project_MTech/digital-watermarking/images/mandrill_512.jpg'
+    watermarkImagePath = '/content/Mini_Project_MTech/digital-watermarking/images/lenna_512.jpg'
 
     watermarked_img_gray = SVD_GRAY_EMBED(coverImagePath, watermarkImagePath)
     extracted_img_gray = SVD_GRAY_EXTRACT(coverImagePath, watermarkImagePath, read_file(watermarked_img_gray, "GRAY"))
