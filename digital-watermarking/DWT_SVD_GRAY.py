@@ -164,8 +164,8 @@ def read_file(path, colourType):  # colour type == GRAY or RGB
 
 # Run all embedding and extraction methods
 if __name__ == "__main__":
-    coverImagePath = '/content/digital-watermarking/images/mandrill_512.jpg'
-    watermarkImagePath = '/content/digital-watermarking/images/lenna_512.jpg'
+    coverImagePath = '/content/Mini_Project_MTech/digital-watermarking/images/mandrill_512.jpg'
+    watermarkImagePath = '/content/Mini_Project_MTech/digital-watermarking/images/lenna_512.jpg'
 
     watermarked_img_gray_hl = DWT_SVD_GRAY_HL_EMBED(coverImagePath, watermarkImagePath)
     extracted_img_gray_hl = DWT_SVD_GRAY_HL_EXTRACT(coverImagePath, watermarkImagePath,
